@@ -18,7 +18,6 @@
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.iconTheme": "vscode-icons",
   "workbench.activityBar.visible": true,
-  "workbench.sideBar.location": "right",
   "atomKeymap.promptV3Features": true,
   "files.watcherExclude": {
     "node_modules/*": true,
