@@ -121,121 +121,220 @@ class App {
     // System.out.println(maq.copos200() == 80);
     // System.out.println(maq.copos300() == 97);
 
-    MaquinaAguaConfiguravel maquinaCustom = new MaquinaAguaConfiguravel(10000, 30, 20);
+    // MaquinaAguaConfiguravel maquinaCustom = new MaquinaAguaConfiguravel(10000, 30, 20);
 
-    System.out.println(maquinaCustom.capacidadeAgua == 10000); // mL
-    System.out.println(maquinaCustom.capacidadeCopos200 == 30);
-    System.out.println(maquinaCustom.capacidadeCopos300 == 20);
+    // System.out.println(maquinaCustom.capacidadeAgua == 10000); // mL
+    // System.out.println(maquinaCustom.capacidadeCopos200 == 30);
+    // System.out.println(maquinaCustom.capacidadeCopos300 == 20);
 
-    // As três linhas a seguinte não devem compilar pois estes atributos devem ser
-    // imutáveis:
-    // maquinaCustom.capacidadeAgua = 100000;
-    // maquinaCustom.capacidadeCopos200 = 300;
-    // maquinaCustom.capacidadeCopos300 = 200;
+    // // As três linhas a seguinte não devem compilar pois estes atributos devem ser
+    // // imutáveis:
+    // // maquinaCustom.capacidadeAgua = 100000;
+    // // maquinaCustom.capacidadeCopos200 = 300;
+    // // maquinaCustom.capacidadeCopos300 = 200;
 
-    // Checando armazenamento
-    System.out.println(maquinaCustom.agua() == 0); // mL
-    System.out.println(maquinaCustom.copos200() == 0);
-    System.out.println(maquinaCustom.copos300() == 0);
+    // // Checando armazenamento
+    // System.out.println(maquinaCustom.agua() == 0); // mL
+    // System.out.println(maquinaCustom.copos200() == 0);
+    // System.out.println(maquinaCustom.copos300() == 0);
 
-    maquinaCustom.abastecerAgua();
-    maquinaCustom.abastecerCopo200();
-    maquinaCustom.abastecerCopo300();
-    System.out.println(maquinaCustom.agua() == 10000);
-    System.out.println(maquinaCustom.copos200() == 30);
-    System.out.println(maquinaCustom.copos300() == 20);
+    // maquinaCustom.abastecerAgua();
+    // maquinaCustom.abastecerCopo200();
+    // maquinaCustom.abastecerCopo300();
+    // System.out.println(maquinaCustom.agua() == 10000);
+    // System.out.println(maquinaCustom.copos200() == 30);
+    // System.out.println(maquinaCustom.copos300() == 20);
 
-    maquinaCustom.servirCopo200(); // -200
-    maquinaCustom.servirCopo200(); // -200
-    maquinaCustom.servirCopo200(); // -200
-    maquinaCustom.servirCopo200(); // -200
-    maquinaCustom.servirCopo200(); // -200
+    // maquinaCustom.servirCopo200(); // -200
+    // maquinaCustom.servirCopo200(); // -200
+    // maquinaCustom.servirCopo200(); // -200
+    // maquinaCustom.servirCopo200(); // -200
+    // maquinaCustom.servirCopo200(); // -200
 
-    // System.out.println(maq.agua() == 9000); // patch:
-    System.out.println(maquinaCustom.copos200() == 25);
-    System.out.println(maquinaCustom.agua() == 9000);
+    // // System.out.println(maq.agua() == 9000); // patch:
+    // System.out.println(maquinaCustom.copos200() == 25);
+    // System.out.println(maquinaCustom.agua() == 9000);
 
-    MaquinaAguaConfiguravel maquininha = new MaquinaAguaConfiguravel(1000, 6, 3);
+    // MaquinaAguaConfiguravel maquininha = new MaquinaAguaConfiguravel(1000, 6, 3);
 
-    System.out.println(maquininha.capacidadeAgua == 1000); // mL
-    System.out.println(maquininha.capacidadeCopos200 == 6);
-    System.out.println(maquininha.capacidadeCopos300 == 3);
-    maquininha.abastecerAgua();
-    maquininha.abastecerCopo200();
-    maquininha.abastecerCopo300();
-    System.out.println(maquininha.agua() == 1000);
-    System.out.println(maquininha.copos200() == 6);
-    System.out.println(maquininha.copos300() == 3);
+    // System.out.println(maquininha.capacidadeAgua == 1000); // mL
+    // System.out.println(maquininha.capacidadeCopos200 == 6);
+    // System.out.println(maquininha.capacidadeCopos300 == 3);
+    // maquininha.abastecerAgua();
+    // maquininha.abastecerCopo200();
+    // maquininha.abastecerCopo300();
+    // System.out.println(maquininha.agua() == 1000);
+    // System.out.println(maquininha.copos200() == 6);
+    // System.out.println(maquininha.copos300() == 3);
 
-    maquininha.servirCopo200(); // -200
-    maquininha.servirCopo200(); // -200
-    maquininha.servirCopo200(); // -200
-    maquininha.servirCopo200(); // -200
-    maquininha.servirCopo200(); // -200
+    // maquininha.servirCopo200(); // -200
+    // maquininha.servirCopo200(); // -200
+    // maquininha.servirCopo200(); // -200
+    // maquininha.servirCopo200(); // -200
+    // maquininha.servirCopo200(); // -200
 
-    System.out.println(maquininha.agua() == 0);
-    System.out.println(maquininha.copos200() == 1);
-    System.out.println(maquininha.copos300() == 3);
+    // System.out.println(maquininha.agua() == 0);
+    // System.out.println(maquininha.copos200() == 1);
+    // System.out.println(maquininha.copos300() == 3);
 
-    try {
-      maquininha.servirCopo200(); // deve lançar exceção
-      System.out.println(false); // esta linha não deve ser executada
-    } catch (Exception e) {
-      System.err.println("true " + e.getMessage()); // Não há água
-    }
+    // try {
+    //   maquininha.servirCopo200(); // deve lançar exceção
+    //   System.out.println(false); // esta linha não deve ser executada
+    // } catch (Exception e) {
+    //   System.err.println("true " + e.getMessage()); // Não há água
+    // }
 
-    maquininha.abastecerAgua();
-    System.out.println(maquininha.agua() == 1000);
-    System.out.println(maquininha.copos200() == 1);
-    System.out.println(maquininha.copos300() == 3);
+    // maquininha.abastecerAgua();
+    // System.out.println(maquininha.agua() == 1000);
+    // System.out.println(maquininha.copos200() == 1);
+    // System.out.println(maquininha.copos300() == 3);
 
-    maquininha.servirCopo200(); // -200
-    System.out.println(maquininha.agua() == 800);
-    System.out.println(maquininha.copos200() == 0);
+    // maquininha.servirCopo200(); // -200
+    // System.out.println(maquininha.agua() == 800);
+    // System.out.println(maquininha.copos200() == 0);
 
-    try {
-      maquininha.servirCopo200(); // deve lançar exceção
-      System.out.println(false); // esta linha não deve ser executada
-    } catch (Exception e) {
-      System.err.println("true " + e.getMessage()); // Não há copos de 200mL
-    }
+    // try {
+    //   maquininha.servirCopo200(); // deve lançar exceção
+    //   System.out.println(false); // esta linha não deve ser executada
+    // } catch (Exception e) {
+    //   System.err.println("true " + e.getMessage()); // Não há copos de 200mL
+    // }
 
-    // Máquinas inválidas devem lançar exceção
+    // // Máquinas inválidas devem lançar exceção
 
-    try {
-      MaquinaAguaConfiguravel maqinvalida = new MaquinaAguaConfiguravel(1000, 0, 3);
-      System.out.println(false); // esta linha não deve ser executada
-    } catch (Exception e) {
-      System.err.println("true " + e.getMessage()); // Copos de 200mL deve ser positivo
-    }
+    // try {
+    //   MaquinaAguaConfiguravel maqinvalida = new MaquinaAguaConfiguravel(1000, 0, 3);
+    //   System.out.println(false); // esta linha não deve ser executada
+    // } catch (Exception e) {
+    //   System.err.println("true " + e.getMessage()); // Copos de 200mL deve ser positivo
+    // }
 
-    try {
-      MaquinaAguaConfiguravel maqinvalida = new MaquinaAguaConfiguravel(1000, 10, 0);
-      System.out.println(false); // esta linha não deve ser executada
-    } catch (Exception e) {
-      System.err.println("true " + e.getMessage()); // Copos de 300mL deve ser positivo
-    }
+    // try {
+    //   MaquinaAguaConfiguravel maqinvalida = new MaquinaAguaConfiguravel(1000, 10, 0);
+    //   System.out.println(false); // esta linha não deve ser executada
+    // } catch (Exception e) {
+    //   System.err.println("true " + e.getMessage()); // Copos de 300mL deve ser positivo
+    // }
 
-    try {
-      MaquinaAguaConfiguravel maqinvalida = new MaquinaAguaConfiguravel(-1000, 10, 10);
-      System.out.println(false); // esta linha não deve ser executada
-    } catch (Exception e) {
-      System.err.println("true " + e.getMessage()); // Quantidade água deve ser positivo
-    }
+    // try {
+    //   MaquinaAguaConfiguravel maqinvalida = new MaquinaAguaConfiguravel(-1000, 10, 10);
+    //   System.out.println(false); // esta linha não deve ser executada
+    // } catch (Exception e) {
+    //   System.err.println("true " + e.getMessage()); // Quantidade água deve ser positivo
+    // }
 
-    // Máquina de 500 litros!
-    MaquinaAguaConfiguravel maquinao = new MaquinaAguaConfiguravel(500000, 3000, 2000);
-    maquinao.abastecerAgua();
-    maquinao.abastecerCopo300();
-    // Esvaziando a máquina
-    try { // servindo enquanto houver água
-      // maquinao.servirCopo300(); // patch: faltou o while (true)
-      while (true)
-        maquinao.servirCopo300();
-    } catch (Exception e) {
-      System.err.println("true: acabou a água");
-    }
-    System.out.println(maquinao.agua() == 200);
-    System.out.println(maquinao.copos300() == 334);
+    // // Máquina de 500 litros!
+    // MaquinaAguaConfiguravel maquinao = new MaquinaAguaConfiguravel(500000, 3000, 2000);
+    // maquinao.abastecerAgua();
+    // maquinao.abastecerCopo300();
+    // // Esvaziando a máquina
+    // try { // servindo enquanto houver água
+    //   // maquinao.servirCopo300(); // patch: faltou o while (true)
+    //   while (true)
+    //     maquinao.servirCopo300();
+    // } catch (Exception e) {
+    //   System.err.println("true: acabou a água");
+    // }
+    // System.out.println(maquinao.agua() == 200);
+    // System.out.println(maquinao.copos300() == 334);
+
+    Forno f = new Forno(45, 220, 1700, 66, 40, 54);
+    System.out.println(f.volume == 45);
+    System.out.println(f.tensao == 220);
+    System.out.println(f.potencia == 1700);
+    System.out.println(f.largura == 66);
+    System.out.println(f.altura == 40);
+    System.out.println(f.profundidade == 54);
+    // todos esses atributos devem ser constantes, as atribuções a seguir não podem compilar,
+    // verifique se estão protegidas e então comente estas linhas:
+    // f.volume = 450;
+    // f.tensao = 2200;
+    // f.potencia = 17000;
+    // f.altura = 400;
+    // f.largura = 660;
+    // f.profundidade = 540;
+
+    // Novo Forno
+    Forno forno = new Forno(84, 220, 1860, 61, 58, 58);
+    System.out.println(forno.volume == 84);
+    System.out.println(forno.tensao == 220);
+    System.out.println(forno.potencia == 1860);
+    System.out.println(forno.altura == 58);
+    System.out.println(forno.largura == 61);
+    System.out.println(forno.profundidade == 58);
+
+    // métodos para consulta
+    System.out.println(forno.temperatura()); // 0 (de 50 a 300)
+    System.out.println(forno.ligado()); // false
+    // os atributos temperatura e ligado devem ser inacessíveis (privados)
+    // não deve compilar, verifique e depois comente as seguintes linhas
+    // System.out.println(forno.temperatura);
+    // System.out.println(forno.ligado);
+    //
+    System.out.println(forno.ligado() == false);
+    forno.aumentarTemperatura(); // liga e vai para 50
+    System.out.println(forno.ligado() == true);
+    System.out.println(forno.temperatura() == 50); // 50
+    forno.aumentarTemperatura();
+    System.out.println(forno.temperatura() == 100); // 100
+    forno.aumentarTemperatura();
+    System.out.println(forno.temperatura() == 150); // 150
+    forno.aumentarTemperatura();
+    System.out.println(forno.temperatura() == 200); // 200
+    forno.aumentarTemperatura();
+    System.out.println(forno.temperatura() == 220); // 220
+    forno.aumentarTemperatura();
+    System.out.println(forno.temperatura() == 250); // 250
+    forno.aumentarTemperatura();
+    System.out.println(forno.temperatura() == 300); // 300
+
+    forno.aumentarTemperatura(); // está no máximo
+    System.out.println(forno.temperatura() == 300); // 300
+    System.out.println(forno.ligado() == true);
+    // reduzindo
+    forno.diminuirTemperatura();
+    forno.diminuirTemperatura();
+    forno.diminuirTemperatura();
+    System.out.println(forno.temperatura() == 200); // 200
+    // desligando direto
+    forno.desligar();
+    System.out.println(forno.ligado() == false);
+    System.out.println(forno.temperatura() == 0);
+    // já está desligado
+    forno.diminuirTemperatura();
+    System.out.println(forno.ligado() == false);
+    System.out.println(forno.temperatura() == 0);
+
+    // timer de 1 a 120 minutos
+    forno.setTimer(15); // minutos
+    forno.aumentarTemperatura();
+    forno.aumentarTemperatura();
+    forno.aumentarTemperatura();
+    System.out.println(forno.ligado() == true);
+    System.out.println(forno.temperatura() == 150);
+    System.out.println(forno.tempoRestante() == 15);
+    forno.tick(); // tick do timer (baixa 1min)
+    System.out.println(forno.tempoRestante() == 14);
+    forno.tick(); forno.tick(); forno.tick(); forno.tick();
+    System.out.println(forno.tempoRestante() == 10);
+    System.out.println(forno.ligado() == true);
+    System.out.println(forno.temperatura() == 150);
+    forno.tick(); forno.tick(); forno.tick(); forno.tick(); forno.tick();
+    forno.tick(); forno.tick(); forno.tick(); forno.tick(); forno.tick();
+    System.out.println(forno.tempoRestante() == 0);
+    System.out.println(forno.ligado() == false);
+    System.out.println(forno.temperatura() == 0);
+    // novo timer
+    forno.setTimer(120);
+    forno.aumentarTemperatura(); forno.aumentarTemperatura();
+    System.out.println(forno.ligado() == true);
+    System.out.println(forno.temperatura() == 100);
+    System.out.println(forno.tempoRestante() == 120);
+
+    while (forno.ligado()) forno.tick(); // tic tac até desligar
+
+    System.out.println(forno.tempoRestante() == 0);
+    System.out.println(forno.ligado() == false);
+    System.out.println(forno.temperatura() == 0);
   }
 }
